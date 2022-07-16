@@ -11,6 +11,8 @@ spring:
     properties:
       hibernate:
         format_sql: true
+        default_batch_fetch_size: 100 #데이터가 별로 없을경우는 비추, 그럴 땐, V3을 사용
+    #open-in-view: false
 
 logging:
   level:
